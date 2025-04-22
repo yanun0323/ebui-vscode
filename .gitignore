@@ -11,4 +11,3 @@ go.work
 # Others
 *.yaml
 *.build
-*.token
