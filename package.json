@@ -1,0 +1,73 @@
+{
+  "name": "ebui-vscode",
+  "displayName": "EBUI Tools",
+  "description": "Automatically run ebui tool when Go files are saved",
+  "version": "0.1.1",
+  "publisher": "ebui",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yanun0323/ebui-vscode"
+  },
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:go"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "ebui-vscode.installEbui",
+        "title": "EBUI: Install ebui tool"
+      },
+      {
+        "command": "ebui-vscode.runEbui",
+        "title": "EBUI: Run ebui on current file"
+      }
+    ],
+    "configuration": {
+      "title": "EBUI",
+      "properties": {
+        "ebui-vscode.enableAutoRun": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically run ebui when saving Go files"
+        },
+        "ebui-vscode.debounceDelay": {
+          "type": "number",
+          "default": 1000,
+          "description": "Delay in milliseconds to wait after the last save before running ebui"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "webpack --mode production",
+    "webpack": "webpack --mode development",
+    "webpack-dev": "webpack --mode development --watch",
+    "compile": "webpack --mode development",
+    "watch": "webpack --mode development --watch",
+    "test": "node ./out/test/runTest.js",
+    "package": "vsce package --no-dependencies"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.60.0",
+    "@types/glob": "^8.1.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "eslint": "^8.36.0",
+    "@typescript-eslint/eslint-plugin": "^5.59.1",
+    "@typescript-eslint/parser": "^5.59.1",
+    "glob": "^8.1.0",
+    "mocha": "^10.2.0",
+    "typescript": "^5.0.4",
+    "@vscode/test-electron": "^2.3.0",
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.4",
+    "ts-loader": "^9.4.3"
+  }
+}
