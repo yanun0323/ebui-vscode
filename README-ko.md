@@ -8,6 +8,10 @@
 
 이 VSCode 확장 프로그램은 Go UI 애플리케이션을 구축할 때 [EBUI](https://github.com/yanun0323/ebui) UI 컴포넌트를 실시간으로 미리보기 할 수 있게 해주며, SwiftUI와 유사한 핫 리로드 경험을 제공합니다.
 
+## 설치
+
+[![Marketplace](https://img.shields.io/visual-studio-marketplace/v/Yanun.ebui-vscode?label=VSCode%20Marketplace&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=Yanun.ebui-vscode)
+
 ## 기능
 
 - Go 파일을 저장할 때 EBUI 컴포넌트 실시간 미리보기

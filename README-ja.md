@@ -8,6 +8,10 @@
 
 この拡張機能は、Go UI アプリケーションを構築する際に、[EBUI](https://github.com/yanun0323/ebui) UI コンポーネントをリアルタイムでプレビューし、SwiftUI のようなホットリロード体験を提供します。
 
+## インストール
+
+[![Marketplace](https://img.shields.io/visual-studio-marketplace/v/Yanun.ebui-vscode?label=VSCode%20Marketplace&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=Yanun.ebui-vscode)
+
 ## 特徴
 
 - Go ファイルを保存する際に EBUI コンポーネントをリアルタイムでプレビュー

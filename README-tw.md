@@ -8,6 +8,10 @@
 
 這是一個用於即時預覽 [EBUI](https://github.com/yanun0323/ebui) UI 元件的 VSCode 擴充插件，在建立 Go UI 應用程式時提供類似 SwiftUI 的熱重載體驗。
 
+## 安裝
+
+[![Marketplace](https://img.shields.io/visual-studio-marketplace/v/Yanun.ebui-vscode?label=VSCode%20Marketplace&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=Yanun.ebui-vscode)
+
 ## 功能特點
 
 - 在保存 Go 檔案時即時預覽 EBUI 元件
