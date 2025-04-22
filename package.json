@@ -4,6 +4,7 @@
   "description": "Automatically run ebui tool when Go files are saved",
   "version": "0.1.1",
   "publisher": "ebui",
+  "icon": "document/ebui-icon-128.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/yanun0323/ebui-vscode"
