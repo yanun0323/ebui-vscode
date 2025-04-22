@@ -3,7 +3,7 @@
   "displayName": "EBUI Tools",
   "description": "Automatically run ebui tool when Go files are saved",
   "version": "0.1.1",
-  "publisher": "ebui",
+  "publisher": "yanun",
   "icon": "document/ebui-icon-128.png",
   "repository": {
     "type": "git",
