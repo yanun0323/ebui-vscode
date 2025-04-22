@@ -1,7 +1,7 @@
 {
   "name": "ebui-vscode",
-  "displayName": "EBUI Tools",
-  "description": "Automatically run ebui tool when Go files are saved",
+  "displayName": "EBUI",
+  "description": "A VSCode extension for live previewing [EBUI](https://github.com/yanun0323/ebui) UI components, providing a SwiftUI-like hot-reload experience when building Go UI applications.",
   "version": "0.1.1",
   "publisher": "yanun",
   "icon": "document/ebui-icon-128.png",
