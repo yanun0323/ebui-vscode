@@ -1,4 +1,4 @@
-# EBUI VSCode 擴充插件
+<a href="."><img height="200" src="./document/ebui-vscode.png"></a>
 
 [![English](https://img.shields.io/badge/English-Click-yellow)](README.md)
 [![繁體中文](https://img.shields.io/badge/繁體中文-點擊查看-orange)](README-tw.md)
