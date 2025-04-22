@@ -70,7 +70,7 @@ async function installEbuiTool(): Promise<void> {
 	outputChannel.appendLine('Installing EBUI tool...');
 	
 	try {
-		const { stdout, stderr } = await execPromise('go install github.com/yanun0323/ebui/tool/ebui@latest');
+		const { stdout, stderr } = await execPromise('go install github.com/yanun0323/ebui/tool/ebui@master');
 		outputChannel.appendLine('EBUI tool installation successful:');
 		outputChannel.appendLine(stdout);
 		if (stderr) {

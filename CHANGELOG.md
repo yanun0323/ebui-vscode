@@ -2,6 +2,12 @@
 
 All notable changes to the EBUI VSCode extension will be documented in this file.
 
+## [0.1.4] - 2025-04-23
+
+### Changed
+
+- Updated ebui tool installation tag from latest to master
+
 ## [0.1.3] - 2025-04-23
 
 ### Changed

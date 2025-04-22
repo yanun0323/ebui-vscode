@@ -2,7 +2,7 @@
   "name": "ebui-vscode",
   "displayName": "EBUI",
   "description": "A VSCode extension for live previewing EBUI views.",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "publisher": "Yanun",
   "icon": "images/icon.png",
   "repository": {
