@@ -27,7 +27,7 @@ export async function activate(context: vscode.ExtensionContext) {
 	let installEbuiCommand = vscode.commands.registerCommand('ebui-vscode.installEbui', async () => {
 		try {
 			await installEbuiTool();
-			vscode.window.showInformationMessage('EBUI tool installed successfully!');
+			// vscode.window.showInformationMessage('EBUI tool installed successfully!');
 			outputChannel.appendLine('EBUI tool installed successfully!');
 		} catch (error) {
 			vscode.window.showErrorMessage(`Failed to install EBUI tool: ${error}`);
@@ -89,14 +89,14 @@ async function runEbuiOnCurrentFile(): Promise<void> {
 	// Get current active editor
 	const editor = vscode.window.activeTextEditor;
 	if (!editor) {
-		vscode.window.showInformationMessage('No file is open');
+		// vscode.window.showInformationMessage('No file is open');
 		outputChannel.appendLine('No file is open');
 		return;
 	}
 
 	// Check if the file is a Go file
 	if (editor.document.languageId !== 'go') {
-		vscode.window.showInformationMessage('Current file is not a Go file');
+		// vscode.window.showInformationMessage('Current file is not a Go file');
 		outputChannel.appendLine('Current file is not a Go file');
 		return;
 	}
@@ -110,8 +110,12 @@ async function runEbuiOnCurrentFile(): Promise<void> {
 	statusBarItem.show();
 
 	try {
-		// Execute ebui command
-		const command = `ebui -f "${filePath}"`;
+		// Check if we should keep windows open when file changes
+		const config = vscode.workspace.getConfiguration('ebui-vscode');
+		const keepWindows = config.get<boolean>('keepWindows');
+		
+		// Execute ebui command with -k flag if keepWindows is enabled
+		const command = `ebui ${keepWindows ? '-k ' : ''}-f "${filePath}"`;
 		outputChannel.appendLine(`Executing command: ${command}`);
 		
 		const { stdout, stderr } = await execPromise(command);

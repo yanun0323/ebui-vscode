@@ -64,6 +64,7 @@ func Preview_MyButton() ui.View {
 
 - `ebui-vscode.enableAutoRun`：啟用/禁用保存 Go 檔案時的自動預覽功能
 - `ebui-vscode.debounceDelay`：設定在最後一次保存後更新預覽前等待的延遲時間（毫秒，預設：500ms）
+- `ebui-vscode.keepWindows`：檔案變更時保留先前的 ebui 視窗（預設：啟用）
 
 ## 手動指令
 

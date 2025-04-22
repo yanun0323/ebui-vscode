@@ -64,6 +64,7 @@ func Preview_MyButton() ui.View {
 
 - `ebui-vscode.enableAutoRun`：Go ファイル保存時の自動プレビュー機能の有効/無効
 - `ebui-vscode.debounceDelay`：最後の保存後、プレビューを更新するまでの待機時間（ミリ秒、デフォルト：500ms）
+- `ebui-vscode.keepWindows`：ファイル変更時に前の ebui ウィンドウを維持する（デフォルト：有効）
 
 ## 手動コマンド
 
