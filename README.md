@@ -1,4 +1,9 @@
 # EBUI VSCode Extension
+[![English](https://img.shields.io/badge/English-Click-yellow)](README.md)
+[![繁體中文](https://img.shields.io/badge/繁體中文-點擊查看-orange)](README-tw.md)
+[![简体中文](https://img.shields.io/badge/简体中文-点击查看-orange)](README-cn.md)
+[![日本語](https://img.shields.io/badge/日本語-クリック-青)](README-ja.md)
+[![한국어](https://img.shields.io/badge/한국어-클릭-yellow)](README-ko.md)
 
 A VSCode extension for live previewing [EBUI](https://github.com/yanun0323/ebui) UI components, providing a SwiftUI-like hot-reload experience when building Go UI applications.
 
