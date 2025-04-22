@@ -2,11 +2,17 @@
 
 All notable changes to the EBUI VSCode extension will be documented in this file.
 
-## [0.1.2] - 2024-06-XX
+## [0.1.3] - 2025-04-23
+
+### Changed
+
+- Changed default keepWindows from true to false
+
+## [0.1.2] - 2025-04-23
 
 ### Added
 
-- Added `keepWindows` setting that allows keeping previous ebui windows open when file changes (default: enabled)
+- Added `keepWindows` setting that allows keeping previous ebui windows open when file changes (default: disabled)
 
 ## [0.1.1] - Initial Release
 

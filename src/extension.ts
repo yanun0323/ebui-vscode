@@ -66,7 +66,7 @@ export async function activate(context: vscode.ExtensionContext) {
 }
 
 async function installEbuiTool(): Promise<void> {
-	vscode.window.showInformationMessage('Installing EBUI tool...');
+	// vscode.window.showInformationMessage('Installing EBUI tool...');
 	outputChannel.appendLine('Installing EBUI tool...');
 	
 	try {
@@ -139,7 +139,8 @@ async function runEbuiOnCurrentFile(): Promise<void> {
 		setTimeout(() => {
 			statusBarItem.dispose();
 		}, 3000);
-		vscode.window.showErrorMessage(`EBUI execution failed: ${error}`);
+		// vscode.window.showErrorMessage(`EBUI execution failed: ${error}`);
+		outputChannel.appendLine(`EBUI execution failed: ${error}`);
 	}
 }
 

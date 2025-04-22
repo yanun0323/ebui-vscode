@@ -64,7 +64,7 @@ func Preview_MyButton() ui.View {
 
 - `ebui-vscode.enableAutoRun`: Go 파일 저장 시 자동 미리보기 기능 활성화/비활성화
 - `ebui-vscode.debounceDelay`: 마지막 저장 후 미리보기 업데이트 전 대기 시간(밀리초, 기본값: 500ms)
-- `ebui-vscode.keepWindows`: 파일 변경 시 이전 ebui 창 유지(기본값: 활성화)
+- `ebui-vscode.keepWindows`: 파일 변경 시 이전 ebui 창 유지(기본값: 비활성화)
 
 ## 수동 명령어
 

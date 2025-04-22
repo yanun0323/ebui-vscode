@@ -64,7 +64,7 @@ This extension provides the following settings:
 
 - `ebui-vscode.enableAutoRun`: Enable/disable automatic previewing when saving Go files
 - `ebui-vscode.debounceDelay`: Delay in milliseconds to wait after the last save before updating the preview (default: 500ms)
-- `ebui-vscode.keepWindows`: Keep previous ebui windows open when file changes (default: enabled)
+- `ebui-vscode.keepWindows`: Keep previous ebui windows open when file changes (default: disabled)
 
 ## Manual Commands
 
